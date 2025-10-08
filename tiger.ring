@@ -1,6 +1,4 @@
-lTesting = False 
-
-Tiger = new Tiger
+load "globals.ring"
 
 func testingTiger
 
