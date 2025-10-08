@@ -1,7 +1,6 @@
 load "globals.ring"
+load "functions.ring"
 load "classes.ring"
 
-func testingTiger
 
-	lTesting = True
 
