@@ -18,12 +18,12 @@ Tiger {
 		"I am not using Windows\n"
 	ok
 
-	for t=1 to 10 
-		string(t) "- C programming is fun!\n"
+	for t=1 to 3 
+		"" + t + "- C programming is fun!\n"
 	next
 
 	for t=1 to 10 
-		"t = " string(t) " square = " string(t*t) "\n"
+		"t = " + t + " square = " + (t*t) + "\n"
 	next
 	
 }
