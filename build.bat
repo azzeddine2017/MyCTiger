@@ -1,0 +1,1 @@
+ring2exe -static tiger.ring
