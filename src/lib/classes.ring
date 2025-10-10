@@ -63,9 +63,15 @@ int main(int argc, char *argv[])
 
 		write("myfile.c",cOutput)
 
+	func cleanFiles
+		
+		remove("myfile.c")
+		remove("buildapp.bat")
+
 	func buildAndRun
 
 		buildAndRunTCC()
+		cleanFiles()
 
 	func buildAndRunTCC
 
