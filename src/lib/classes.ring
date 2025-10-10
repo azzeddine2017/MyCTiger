@@ -76,7 +76,7 @@ int main(int argc, char *argv[])
 	func buildAndRunTCC
 
 		generateCode()
-		write("buildapp.bat","tools\tcc\tcc myfile.c")
+		write("buildapp.bat",exefolder()+"\tools\tcc\tcc myfile.c")
 		systemSilent("buildapp.bat")
 		system("myfile.exe")
 
@@ -85,7 +85,7 @@ int main(int argc, char *argv[])
 		generateCode()
 		if ! lTigerFile
 			write("buildapp.bat",
-				`call tools\msvc\locatevc.bat`+nl+
+				"call "+exefolder()+"\tools\msvc\locatevc.bat"+nl+
 				"cl myfile.c"+nl+
 				"myfile.exe")
 			system("buildapp.bat")
