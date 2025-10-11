@@ -1,5 +1,7 @@
 # MyCTiger
 
+## Introduction
+
 MyCTiger transforms the Ring programming language into a powerful domain-specific language (DSL) for generating and executing C programs. 
 
 It empowers developers to enjoy the performance and efficiency of C while leveraging Ring’s expressive syntax and productivity for DSL creation.
