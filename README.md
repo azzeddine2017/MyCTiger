@@ -1,6 +1,6 @@
-# Tiger
+# MyCTiger
 
-An experimental attempt to embed C code generation inside Ring, effectively turning Ring into a domain-specific language (DSL) for generating and executing C programs. 
+C code generation using Ring, effectively turning Ring into a domain-specific language (DSL) for generating and executing C programs. 
 
 ## Features
 
