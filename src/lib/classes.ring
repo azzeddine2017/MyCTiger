@@ -29,16 +29,15 @@ class c
 
 	func braceStart
 
-		cOutput += `
-#include "stdio.h"
+		cOutput += `#include "stdio.h"
+
 int main(int argc, char *argv[])
 {
 `
 
 	func braceEnd
 	
-		cOutput += `
-	return 0;
+		cOutput += `	return 0;
 }
 `
 
@@ -70,7 +69,6 @@ int main(int argc, char *argv[])
 
 	func cleanFiles
 		
-		remove(cOutputFile)
 		remove("buildapp.bat")
 
 	func buildAndRun
