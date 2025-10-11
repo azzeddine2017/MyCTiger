@@ -37,21 +37,33 @@ int main(int argc, char *argv[])
 
 	func braceEnd
 	
-		cOutput += `	return 0;
+		cOutput += nl+getTabs()+`return 0;
 }
 `
 
 	func braceExprEval vValue
 
 		if lCcode and vValue
-			cOutput += getTabs() + vValue
-			lCCode = False
+			processCCode(vValue)
 			return
 		ok
 
 		if lLiteralToOutput
 			cOutput += getTabs() + `printf("` + vValue + `");` + nl
 		ok
+
+	func processCCode vValue
+
+		aList = str2List(vValue)
+		for cLine in aList 
+			while left(cLine,1) = tab 
+				cLine = substr(cLine,2)
+			end
+			cLine = getTabs() + cLine
+		next 
+		vValue = list2Str(aList)
+		cOutput += vValue + nl
+		lCCode = False
 
 	func getTabs
 
