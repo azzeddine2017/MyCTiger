@@ -1,0 +1,7 @@
+Tiger {
+
+	C `
+		printf("Hello, World! - Using C code\n");
+	`
+
+}

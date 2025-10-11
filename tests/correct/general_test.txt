@@ -1,0 +1,25 @@
+Hello, World! 
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+I am using Windows
+1- C programming is fun!
+2- C programming is fun!
+3- C programming is fun!
+t = 1 square = 1
+t = 2 square = 4
+t = 3 square = 9
+t = 4 square = 16
+t = 5 square = 25
+t = 6 square = 36
+t = 7 square = 49
+t = 8 square = 64
+t = 9 square = 81
+t = 10 square = 100

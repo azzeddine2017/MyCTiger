@@ -1,0 +1,27 @@
+Tiger {
+
+	"Hello, World! \n"
+
+	#=================================================
+	C `
+		for (int x=1 ; x <= 10 ;x++) {
+			printf("%d\n",x);
+		}
+	`
+	#=================================================
+
+	if isWindows() 
+		"I am using Windows\n"
+	else
+		"I am not using Windows\n"
+	ok
+
+	for t=1 to 3 
+		"" + t + "- C programming is fun!\n"
+	next
+
+	for t=1 to 10 
+		"t = " + t + " square = " + (t*t) + "\n"
+	next
+	
+}
