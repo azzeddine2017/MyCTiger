@@ -2,7 +2,7 @@ load "src/main.ring"
 
 if isMainSourceFile()
 
-	processArguments()
+	startTiger()
 
 ok
 

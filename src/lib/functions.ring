@@ -4,7 +4,7 @@ func testingTiger
 
 	lTesting = True
 
-func processArguments
+func startTiger
 
 	aPara = appArguments()
 	if aPara
