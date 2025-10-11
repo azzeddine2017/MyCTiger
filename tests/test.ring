@@ -1,7 +1,6 @@
 
 # Load Global Libraries
 	load "stdlibcore.ring"
-	load "consolecolors.ring"
 
 # Load Local Libraries 
 	load "cuilib.ring"
