@@ -20,7 +20,7 @@ This isn’t about runtime language integration—it’s about compile-time code
 
 ## Examples
 
-(1) Hello World program
+(1) Hello World program (hello.tiger)
 
 	Tiger {
 	
@@ -28,15 +28,51 @@ This isn’t about runtime language integration—it’s about compile-time code
 		
 	}
 
-(2) Using C code
+To build and run the program
+
+	Tiger hello.tiger
+
+Output
+
+	Hello, World!
+
+Generated C code
+
+	#include "stdio.h"
+
+	int main(int argc, char *argv[])
+	{
+		printf("Hello, World! \n");
+		return 0;
+	}
+	
+
+(2) Using C code in Tiger files (helloc.tiger)
 
 	Tiger {
-
 		C `
 			printf("Hello, World! - Using C code\n");
 		`
-
 	}
+
+To build and run the program
+
+	Tiger helloc.tiger
+
+Output
+
+	Hello, World! - Using C code
+
+Generated C code
+
+	#include "stdio.h"
+
+	int main(int argc, char *argv[])
+	{
+		printf("Hello, World! - Using C code\n");
+		return 0;
+	}
+	
 
 (3) Using Ring code at compile-time
 
@@ -68,3 +104,68 @@ This isn’t about runtime language integration—it’s about compile-time code
 	
 	}
   
+To build and run the program
+
+	Tiger test.tiger
+
+Output:
+
+	Hello, World!
+	1
+	2
+	3
+	4
+	5
+	6
+	7
+	8
+	9
+	10
+	I am using Windows
+	1- C programming is fun!
+	2- C programming is fun!
+	3- C programming is fun!
+	t = 1 square = 1
+	t = 2 square = 4
+	t = 3 square = 9
+	t = 4 square = 16
+	t = 5 square = 25
+	t = 6 square = 36
+	t = 7 square = 49
+	t = 8 square = 64
+	t = 9 square = 81
+	t = 10 square = 100	
+
+Generated C code
+
+	#include "stdio.h"
+
+	int main(int argc, char *argv[])
+	{
+
+		printf("Hello, World! \n");
+	
+		for (int x=1 ; x <= 10 ;x++) {
+			printf("%d\n",x);
+		}
+	
+		printf("I am using Windows\n");
+
+		printf("1- C programming is fun!\n");
+		printf("2- C programming is fun!\n");
+		printf("3- C programming is fun!\n");
+
+		printf("t = 1 square = 1\n");
+		printf("t = 2 square = 4\n");
+		printf("t = 3 square = 9\n");
+		printf("t = 4 square = 16\n");
+		printf("t = 5 square = 25\n");
+		printf("t = 6 square = 36\n");
+		printf("t = 7 square = 49\n");
+		printf("t = 8 square = 64\n");
+		printf("t = 9 square = 81\n");
+		printf("t = 10 square = 100\n");
+
+		return 0;
+	}
+
