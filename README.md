@@ -28,5 +28,14 @@ This isn’t about runtime language integration—it’s about compile-time code
 		
 	}
 
+(2) Using C code
+
+	Tiger {
+
+		C `
+			printf("Hello, World! - Using C code\n");
+		`
+
+	}
 
   
