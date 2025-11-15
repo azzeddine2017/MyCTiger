@@ -18,4 +18,15 @@ This isn’t about runtime language integration—it’s about compile-time code
 
 • **Unrestricted C Integration:** Use C libraries directly—no bindings, wrappers, or runtime glue required.
 
+## Examples
+
+(1) Hello World program
+
+	Tiger {
+	
+		"Hello, World! \n"
+		
+	}
+
+
   
