@@ -22,7 +22,7 @@ This isn’t about runtime language integration—it’s about compile-time code
 
 This is a prototype of the idea (Could be extended by interested developers with their own libraries and DSLs).
 
-Development and testing are performed using MS-Windows, Ring 1.24, and TCC.
+Development and testing are performed using MS-Windows, Ring 1.24, and TCC (Exists in the Tools folder).
 
 To build Tiger.exe, run build.bat after installing the Ring programming language.
 
