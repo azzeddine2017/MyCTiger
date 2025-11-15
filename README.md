@@ -18,14 +18,16 @@ This isn’t about runtime language integration—it’s about compile-time code
 
 • **Unrestricted C Integration:** Use C libraries directly—no bindings, wrappers, or runtime glue required.
 
+## Development Status
+
+This is a prototype of the idea, designed to be extended by interested developers with their own libraries and DSLs.
+
 ## Examples
 
 (1) Hello World program (hello.tiger)
 
 	Tiger {
-	
 		"Hello, World! \n"
-		
 	}
 
 To build and run the program
@@ -50,9 +52,7 @@ Generated C code
 (2) Using C code in Tiger files (helloc.tiger)
 
 	Tiger {
-		C `
-			printf("Hello, World! - Using C code\n");
-		`
+		C ` printf("Hello, World! - Using C code\n");  `
 	}
 
 To build and run the program
