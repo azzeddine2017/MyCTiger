@@ -169,3 +169,6 @@ Generated C code
 		return 0;
 	}
 
+# 📜License 
+
+The MyCTiger project is distributed under the MIT License.
