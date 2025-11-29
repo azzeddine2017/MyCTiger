@@ -1,0 +1,2 @@
+? exefolder()
+? currentdir()

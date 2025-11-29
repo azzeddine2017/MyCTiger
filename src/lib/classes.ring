@@ -88,10 +88,18 @@ int main(int argc, char *argv[])
 		buildAndRunTCC()
 		cleanFiles()
 
+	func getToolsFolder
+		if fexists("tools\tcc\tcc.exe")
+			return "tools"
+		but fexists(exefolder()+"\tools\tcc\tcc.exe")
+			return exefolder()+"\tools"
+		ok
+		return "tools"
+
 	func buildAndRunTCC
 
 		generateCode()
-		write("buildapp.bat",exefolder()+"\tools\tcc\tcc " + cOutputFile + " -o " + cEXEFile)
+		write("buildapp.bat",getToolsFolder()+"\tcc\tcc " + cOutputFile + " -o " + cEXEFile)
 		systemSilent("buildapp.bat")
 		system(cExeFile)
 
@@ -100,7 +108,7 @@ int main(int argc, char *argv[])
 		generateCode()
 		if ! lTigerFile
 			write("buildapp.bat",
-				"call "+exefolder()+"\tools\msvc\locatevc.bat"+nl+
+				"call "+getToolsFolder()+"\msvc\locatevc.bat"+nl+
 				"cl "+cOutputFile + " -o " + cEXEFile + nl +
 				cExeFile)
 			system("buildapp.bat")
